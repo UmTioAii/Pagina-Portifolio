@@ -99,7 +99,6 @@
   }
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 4px;
 }
@@ -114,7 +113,6 @@
   background: hsl(0 90% 55%);
 }
 
-/* Noise overlay */
 .noise-bg::before {
   content: '';
   position: fixed;
@@ -124,7 +122,6 @@
   z-index: 1;
 }
 
-/* Terminal cursor blink */
 @keyframes blink {
   0%, 50% { opacity: 1; }
   51%, 100% { opacity: 0; }
@@ -133,23 +130,19 @@
   animation: blink 1s infinite;
 }
 
-/* Code line highlight */
 .code-line:hover {
   background: hsl(0 90% 55% / 0.05);
 }
 
-/* Selection */
 ::selection {
   background: hsl(0 90% 55% / 0.3);
   color: hsl(0 0% 100%);
 }
 
-/* Smooth scroll */
 html {
   scroll-behavior: smooth;
 }
 
-/* GSAP will-change hints */
 .gsap-reveal {
   will-change: transform, opacity;
 }

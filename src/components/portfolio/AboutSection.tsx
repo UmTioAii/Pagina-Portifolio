@@ -452,7 +452,9 @@ const AboutSection = () => {
                       onClick={() => handleIndicatorClick(i)}
                       className={`w-1.5 h-1.5 rounded-full transition-colors cursor-pointer ${
                         i === activeCard ? "bg-primary" : "bg-muted-foreground/30"
+                      title: `Ver ${codeCards[i].filename)
                       }`}
+                      title={`Ver ${codeCards[i].filename}`}
                     />
                   ))}
                 </div>
