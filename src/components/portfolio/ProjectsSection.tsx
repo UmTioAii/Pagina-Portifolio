@@ -69,10 +69,10 @@ const ProjectCard = ({
       transition={{ duration: 0.6, delay: index * 0.12 }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="group relative cursor-pointer"
+      className="group relative cursor-pointer h-full"
     >
-      <a href={project.href} target="_blank" rel="noopener noreferrer" className="block">
-        <div className="relative overflow-hidden border border-border bg-card transition-colors duration-300 hover:border-primary/50">
+      <a href={project.href} target="_blank" rel="noopener noreferrer" className="block h-full">
+        <div className="relative overflow-hidden border border-border bg-card transition-colors duration-300 hover:border-primary/50 h-full flex flex-col">
           {/* Project visual area */}
           <div className="relative h-[240px] md:h-[300px] overflow-hidden">
             <div
@@ -108,7 +108,7 @@ const ProjectCard = ({
           </div>
 
           {/* Content */}
-          <div className="p-7">
+          <div className="p-7 flex flex-1 flex-col">
             <div className="flex items-center gap-3 mb-3">
               <span
                 className="w-1.5 h-1.5 rounded-full"
@@ -127,7 +127,7 @@ const ProjectCard = ({
               {project.description}
             </p>
 
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 mt-auto">
               {project.tags.map((tag) => (
                 <span
                   key={tag}
@@ -185,7 +185,7 @@ const ProjectsSection = () => {
           <div className="h-px bg-gradient-to-r from-primary to-transparent mt-4" />
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 [grid-auto-rows:1fr]">
           {projects.map((project, i) => (
             <ProjectCard key={project.title} project={project} index={i} />
           ))}
