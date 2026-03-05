@@ -1,61 +1,82 @@
-# Welcome to your project
+# 🌤️ Clima Já
 
-## Project info
+Aplicação web **moderna, rápida e responsiva** para consultar o **clima em tempo real** de qualquer cidade do mundo.  
+Construída com **React + Vite**, com interface limpa e foco em usabilidade.
 
+<!-- Badges (opcionais) -->
+![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-informational?style=flat)
 
+## 🌐 Demo
 
-## How can I edit this code?
+Acesse: ** [clima-j.vercel.app](http://clima-j.vercel.app/) **
 
-There are several ways of editing your application.
+---
 
+## ✨ Funcionalidades
 
+- 🔎 **Busca global por cidade**
+- 🌡️ **Temperatura atual**
+- 💧 **Umidade**
+- 💨 **Velocidade do vento**
+- 🤒 **Sensação térmica**
+- 📝 **Descrição do clima**
+- 📱 **Totalmente responsivo** (mobile, tablet e desktop)
+- ⚡ **Dados em tempo real** via API de clima
 
-**Use your preferred IDE**
+---
 
+---
 
+## 🛠️ Tecnologias
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **React**
+- **Vite**
+- **API de Clima** (ex.: OpenWeather / WeatherAPI / etc.)
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 📁 Estrutura do projeto
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+```text
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-
-
-
+Clima-ja/
+├─ public/
+│  ├─ favicon.ico
+│  └─ assets/
+│     └─ (imagens estáticas)
+├─ src/
+│  ├─ assets/
+│  │  └─ (imagens, ícones, svg)
+│  ├─ components/
+│  │  ├─ Header/
+│  │  │  ├─ index.jsx
+│  │  │  └─ styles.css
+│  │  ├─ SearchBar/
+│  │  │  ├─ index.jsx
+│  │  │  └─ styles.css
+│  │  ├─ WeatherCard/
+│  │  │  ├─ index.jsx
+│  │  │  └─ styles.css
+│  │  └─ Loading/
+│  │     ├─ index.jsx
+│  │     └─ styles.css
+│  ├─ pages/
+│  │  └─ Home/
+│  │     ├─ index.jsx
+│  │     └─ styles.css
+│  ├─ services/
+│  │  └─ weatherApi.js
+│  ├─ utils/
+│  │  └─ formatters.js
+│  ├─ styles/
+│  │  └─ global.css
+│  ├─ App.jsx
+│  └─ main.jsx
+├─ .env.example
+├─ .gitignore
+├─ index.html
+├─ package.json
+├─ vite.config.js
+└─ README.md

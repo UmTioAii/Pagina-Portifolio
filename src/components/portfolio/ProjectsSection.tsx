@@ -39,6 +39,15 @@ const projects = [
     color: "45 85% 55%",
     href: "https://bud-budget.vercel.app",
   },
+  {
+    title: "Clima-Já",
+    category: "Frontend · Clima",
+    description:
+      "Aplicacao de previsao do tempo com consulta de cidades, visual limpo e foco na experiencia mobile e desktop.",
+    tags: ["JavaScript 68.3%", "CSS 31.1%", "HTML 0.6%"],
+    color: "195 85% 50%",
+    href: "https://clima-j.vercel.app",
+  },
 ];
 
 const ProjectCard = ({
